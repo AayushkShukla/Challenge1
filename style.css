@@ -81,13 +81,31 @@ button:hover {
     color: hsl(228, 12%, 48%);
 }
 
-/* ### Primary
+@media (max-width: 500px) {
+    .container{
+        flex-direction: column;
+    }
 
-- Dark cyan: hsl(158, 36%, 37%)
-- Cream: hsl(30, 38%, 92%)
+    .perfume-img{
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+        margin-top: 10px;
+    }
 
-### Neutral
+    .item{
+        height: 300px;
+        width: 90%;
+    }
 
-- Very dark blue: hsl(212, 21%, 14%)
-- Dark grayish blue: hsl(228, 12%, 48%)
-- White: hsl(0, 0%, 100%) */
+    .info-item{
+        border-radius: 0 0 10px 10px;
+    }
+
+    p{
+        font-size: 0.7rem;
+    }
+
+    h1{
+        font-size: 1.4rem;
+    }
+}
